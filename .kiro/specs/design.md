@@ -80,132 +80,98 @@ The three engines operate as a unified system through:
 ### 2.1 AWS Serverless Architecture Diagram
 
 ```mermaid
-graph TB
-    subgraph "Client Layer"
-        WEB[Next.js Web App]
-        MOBILE[React Native Mobile]
-    end
+interface CareerSimulationService {
+  generateTrajectory(profile: UserProfile): Promise<CareerTrajectoryResult>;
 
-    subgraph "Edge & CDN"
-        CF[Amazon CloudFront]
-        S3WEB[S3 Static Hosting]
-    end
+  analyzeSkillGaps(
+    currentSkills: Skill[],
+    targetRole: string
+  ): Promise<SkillGapAnalysis>;
 
-    subgraph "API Gateway Layer"
-        APIGW[Amazon API Gateway]
-        WAF[AWS WAF]
-        COGNITO[Amazon Cognito]
-    end
+  assessRisks(
+    profile: UserProfile,
+    plannedHours: number
+  ): Promise<RiskAssessment>;
 
-    subgraph "Compute Layer - AWS Lambda"
-        AUTH[Auth Service]
-        UPLOAD[Resume Upload Handler]
-        SIM[Career Simulation Service]
-        RES[Resume Intelligence Service]
-        PLAN[Adaptive Planner Service]
-        BURN[Burnout Monitor Service]
-        PROG[Progress Tracker Service]
-        NOTIF[Notification Service]
-    end
+  validateGoalFeasibility(
+    goal: CareerGoal,
+    learningVelocity: number,
+    availableHours: number
+  ): Promise<FeasibilityResult>;
 
-    subgraph "AI/ML Layer"
-        BEDROCK[Amazon Bedrock<br/>Claude/Titan Models]
-        SAGEMAKER[Amazon SageMaker<br/>Custom ML Models]
-        COMPREHEND[Amazon Comprehend<br/>Sentiment Analysis]
-        TEXTRACT[Amazon Textract<br/>Resume Parsing]
-    end
+  compareScenarios(
+    baseProfile: UserProfile,
+    scenarios: ActionScenario[]
+  ): Promise<ScenarioComparison>;
+}
 
-    subgraph "Data Layer"
-        DDB[Amazon DynamoDB<br/>User Profiles & State]
-        S3DATA[Amazon S3<br/>Resume Storage]
-        OPENSEARCH[Amazon OpenSearch<br/>Job Market Index]
-        PINECONE[Pinecone Vector DB<br/>Skill Embeddings]
-        ELASTICACHE[Amazon ElastiCache<br/>Redis - Session Cache]
-    end
+interface UserProfile {
+  userId: string;
+  resume: ResumeData;
+  currentSkills: Skill[];
+  gpa?: number;
+  experienceLevel: 'fresher' | 'junior' | 'mid' | 'senior';
+  learningSpeed: number;
+  weeklyAvailableHours: number;
+  targetRole: string;
+  currentSalary?: number;
+  location: string;
+}
 
-    subgraph "Event & Orchestration"
-        EVENTBRIDGE[Amazon EventBridge]
-        SQS[Amazon SQS]
-        SNS[Amazon SNS]
-        STEPFN[AWS Step Functions]
-    end
+interface CareerTrajectoryResult {
+  scenarios: {
+    bestCase: TrajectoryScenario;
+    averageCase: TrajectoryScenario;
+    worstCase: TrajectoryScenario;
+  };
+  skillGaps: SkillGapAnalysis;
+  risks: RiskAssessment;
+  confidence: number;
+  generatedAt: Date;
+}
 
-    subgraph "Monitoring & Analytics"
-        CLOUDWATCH[Amazon CloudWatch]
-        XRAY[AWS X-Ray]
-        QUICKSIGHT[Amazon QuickSight]
-    end
+interface TrajectoryScenario {
+  timeline: YearlyProjection[];
+  totalSalaryGrowth: number;
+  roleEvolution: RoleTransition[];
+  keyMilestones: Milestone[];
+  assumptions: string[];
+}
 
-    WEB --> CF
-    MOBILE --> CF
-    CF --> S3WEB
-    CF --> APIGW
-    
-    APIGW --> WAF
-    WAF --> COGNITO
-    COGNITO --> AUTH
-    
-    APIGW --> UPLOAD
-    APIGW --> SIM
-    APIGW --> RES
-    APIGW --> PLAN
-    APIGW --> BURN
-    APIGW --> PROG
-    
-    UPLOAD --> S3DATA
-    UPLOAD --> TEXTRACT
-    
-    SIM --> BEDROCK
-    SIM --> SAGEMAKER
-    SIM --> OPENSEARCH
-    SIM --> PINECONE
-    
-    RES --> BEDROCK
-    RES --> TEXTRACT
-    RES --> OPENSEARCH
-    
-    PLAN --> BEDROCK
-    PLAN --> SAGEMAKER
-    
-    BURN --> COMPREHEND
-    BURN --> SAGEMAKER
-    
-    AUTH --> DDB
-    SIM --> DDB
-    RES --> DDB
-    PLAN --> DDB
-    BURN --> DDB
-    PROG --> DDB
-    
-    SIM --> EVENTBRIDGE
-    RES --> EVENTBRIDGE
-    PLAN --> EVENTBRIDGE
-    BURN --> EVENTBRIDGE
-    
-    EVENTBRIDGE --> SQS
-    EVENTBRIDGE --> SNS
-    EVENTBRIDGE --> STEPFN
-    
-    SQS --> NOTIF
-    SNS --> MOBILE
-    
-    STEPFN --> SIM
-    STEPFN --> RES
-    STEPFN --> PLAN
-    
-    AUTH --> ELASTICACHE
-    SIM --> ELASTICACHE
-    
-    UPLOAD --> CLOUDWATCH
-    SIM --> CLOUDWATCH
-    RES --> CLOUDWATCH
-    PLAN --> CLOUDWATCH
-    BURN --> CLOUDWATCH
-    
-    CLOUDWATCH --> XRAY
-    DDB --> QUICKSIGHT
+interface YearlyProjection {
+  year: number;
+  salary: {
+    amount: number;
+    confidenceInterval: { min: number; max: number };
+  };
+  role: string;
+  requiredSkills: string[];
+}
+
+interface SkillGapAnalysis {
+  missingSkills: SkillGap[];
+  totalLearningTime: number;
+  dependencyGraph: SkillDependency[];
+}
+
+interface SkillGap {
+  skillName: string;
+  category: 'core' | 'important' | 'nice-to-have';
+  impactScore: number;
+  estimatedLearningTime: number;
+  salaryImpact: number;
+  marketDemand: number;
+}
+
+interface RiskAssessment {
+  stagnationRisk: number;
+  burnoutProbability: number;
+  careerPivotFeasibility: number;
+  warnings: string[];
+  recommendations: string[];
+}
+
 ```
-
 ### 2.2 Architecture Principles
 
 **Serverless-First (Cost Efficiency)**
@@ -3073,3 +3039,4 @@ export async function handler(event: APIGatewayProxyEvent) {
 **Target:** Amazon AI for Bharat Hackathon
 
 *End of Technical Design Document*
+
