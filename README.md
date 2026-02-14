@@ -93,10 +93,31 @@ FutureForge AI is a unified platform that simulates career trajectories, analyze
 hack2skill_ai4bharat/
 ├── 📁 .kiro/specs/
 │   ├── 📄 requirements.md          # 12 detailed requirements
-│   ├── 📄 design.md               # AWS architecture & 37 correctness properties
-│   └── 📄 tasks.md                # Implementation plan with PBT
-
+│   ├── 📄 design.md                # AWS architecture & 37 correctness properties
+│   └── 📄 tasks.md                 # Implementation plan with PBT
+├── architecture-diagram.md         # Professional AWS architecture diagram
+├── wireframes-preview.md           # Complete mobile app wireframes
+├── wireframes.md                   # wireframes
+└── 📄 README.md                   # This file
 ```
+
+## Quick Start
+
+## 1.Clone the repository
+
+git clone https:/Shiv-15CC/github.com//hack2skill_ai4bharat.git
+cd hack2skill_ai4bharat
+
+## 2.Review the documentation
+
+- **Read (requirements.md) for detailed specifications**
+- **Check (design.md) for architecture details**
+- **Follow (tasks.md) for implementation plan**
+
+## 3.View wireframes and architecture
+
+- **Open wireframes.html in your browser**
+- **Open architecture.html for technical architecture**
 
 ## 🎨 Visual Design
 
