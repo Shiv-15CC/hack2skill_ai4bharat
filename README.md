@@ -86,3 +86,44 @@ FutureForge AI is a unified platform that simulates career trajectories, analyze
 - **Real-Time Adaptation**: Event-driven updates instantly adjust study plans and projections
 - **Secure Data Flow**: Authentication, storage, and API layers ensure safe handling of user career data
 - **Modular Design**: Each engine (Simulation, Resume, Planner) works independently but shares one profile database
+
+## 📋 Project Structure
+
+```
+
+futureforge-ai/
+│
+├── frontend/                 # UI of the app (dashboard, planner, resume upload)
+│   ├── index.html
+│   ├── app.js
+│   └── style.css
+│
+├── backend/                  # Server code & APIs
+│   ├── server.py / server.js
+│   ├── routes/               # API endpoints
+│   └── utils/                # Helper functions
+│
+├── ai-modules/               # Core AI logic
+│   ├── resume_analysis.py
+│   ├── career_simulation.py
+│   ├── skill_gap.py
+│   └── planner.py
+│
+├── data/                     # Sample datasets / test inputs
+│   ├── skills.json
+│   └── sample_resume.pdf
+│
+├── docs/                     # Extra project info
+│   ├── architecture.md
+│   └── workflow.md
+│
+├── demo/                     # Demo files for hackathon
+│   ├── screenshots/
+│   └── demo_notes.md
+│
+├── requirements.txt / package.json   # Dependencies
+└── README.md                         # Main project file
+
+```
+
+
