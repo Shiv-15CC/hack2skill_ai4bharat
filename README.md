@@ -141,14 +141,14 @@ futureforge-ai/
 ## 🤝 Contributing
 
 We welcome contributions that improve FutureForge AI and make career growth more accessible for students and developers.
-- **Fork the repository
-- Create a new branch (feature-name)
 
-Commit your changes with clear messages
+You can contribute by:
+- Reporting bugs
+- Suggesting new features
+- Improving UI or documentation
+- Optimizing AI modules
 
-Push the branch and open a Pull Request
-
-Please ensure your code follows clean structure and includes basic documentation where necessary. Suggestions, feature ideas, and improvements are always appreciated.
+Fork the repo, make changes, and submit a PR — even small contributions help!
 
 
 
