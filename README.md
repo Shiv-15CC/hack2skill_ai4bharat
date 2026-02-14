@@ -110,9 +110,9 @@ hack2skill_ai4bharat/
 
 ## 2.Review the documentation
 
-- **Read requirements.md(https://github.com/Shiv-15CC/hack2skill_ai4bharat/blob/main/.kiro/specs/requirements.md) for detailed specifications**
-- **Check design.md(https://github.com/Shiv-15CC/hack2skill_ai4bharat/blob/main/.kiro/specs/design.md) for architecture details**
-- **Follow tasks.md(https://github.com/Shiv-15CC/hack2skill_ai4bharat/blob/main/.kiro/specs/tasks.md) for implementation plan**
+- **Read [requirements.md](https://github.com/Shiv-15CC/hack2skill_ai4bharat/blob/main/.kiro/specs/requirements.md) for detailed specifications**
+- **Check [design.md](https://github.com/Shiv-15CC/hack2skill_ai4bharat/blob/main/.kiro/specs/design.md) for architecture details**
+- **Follow [tasks.md](https://github.com/Shiv-15CC/hack2skill_ai4bharat/blob/main/.kiro/specs/tasks.md) for implementation plan**
 
 ## 3.View wireframes and architecture
 
