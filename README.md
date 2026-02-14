@@ -139,6 +139,14 @@ futureforge-ai/
 - **Submission Date**: February 2026
 - **Repository**: [github.com/Shivam-15CC/hack2skill_ai4bharat](https://github.com/Shiv-15CC/hack2skill_ai4bharat)
 
+## 💡 Innovation Highlights
+
+- **Unified Growth Engine** – Combines career simulation, resume intelligence, and study planning into one AI system
+- **Future Outcome Prediction** – Shows realistic career paths and salary impact instead of generic advice
+- **Closed-Loop Learning Design** – Resume → Skills → Planner → Re-simulation creates continuous improvement cycle
+- **Adaptive Productivity Intelligence** – Detects overload, adjusts plans, and reduces burnout risk automatically
+- **Data-Driven Career Decisions** – Turns career planning into measurable actions rather than guesswork
+
 ## 📈 Future Roadmap
 
 ### Phase 1: MVP (Hackathon)
