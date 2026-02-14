@@ -156,27 +156,21 @@ futureforge-ai/
 
 ## 📞 Contact
 
-**Shivam Virmani**, **Ashiwn Hamsaneni**, **Sai Shruthi Gopishetty**, **Adhitya Tupil Raju**
+**Shivam Virmani**
 
-- GitHub: @yourgithubusername
-
-Email: yourmail@gmail.com
-
-LinkedIn: Your LinkedIn Profile
+- GitHub: [@Shiv-15CC](https://github.com/Shiv-15CC)
+- Email: virmanishivam15@gmail.com
+- LinkedIn: [Shivam Virmani](https://www.linkedin.com/in/shivam-virmani-9330181b2/)
 
 ## 📄 License
 
-This project is licensed under the MIT License — see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgements
 
-AWS Hackathon organizers for the opportunity and platform
-
-Amazon Web Services for cloud infrastructure and AI tools
-
-Open-source community for libraries, datasets, and inspiration
-
-Developers and mentors who provided guidance during the build process
-
-Friends and testers who helped improve the demo and usability
+- **AWS Hackathon organizers for the opportunity and platform**
+- **Amazon Web Services for cloud infrastructure and AI tools**
+- **Open-source community for libraries, datasets, and inspiration**
+- **Developers and mentors who provided guidance during the build process**
+- **Friends and testers who helped improve the demo and usability**
 
