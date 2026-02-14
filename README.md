@@ -132,8 +132,12 @@ futureforge-ai/
 
 
 
+## 🏆 Hackathon Submission
 
-
+- **Team**: QuadVanta
+- **Category**: AI for Learning & Developer Productivity
+- **Submission Date**: February 2026
+- **Repository**: [github.com/Shivam-15CC/hack2skill_ai4bharat](https://github.com/Shiv-15CC/hack2skill_ai4bharat)
 
 ## 📈 Future Roadmap
 
