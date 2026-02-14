@@ -135,8 +135,28 @@ futureforge-ai/
 
 
 
+## 📈 Future Roadmap
 
+### Phase 1: MVP (Hackathon)
+- ✅ Resume upload and AI-based analysis
+- ✅ Basic career trajectory prediction engine
+- ✅ Skill gap detection with recommended roadmap
+- ✅ Weekly study planner with simple adaptive logic
+- ✅ AWS backend setup for storage and API handling
 
+### Phase 2: Enhanced Intelligence
+- 🔄 Advanced career simulation with multiple scenario paths
+- 🔄 Improved resume scoring with ATS-style industry matching
+- 🔄 Dynamic planner with deadline awareness and exam mode
+- 🔄 Burnout risk detection using workload tracking patterns
+- 🔄 Integration with job datasets for more realistic predictions
+
+### Phase 3: Scale & Expansion
+- 📅 Internship and job recommendation engine
+- 📅 Live progress dashboard with analytics and growth charts
+- 📅 Multi-role simulation (compare Backend vs ML vs Product paths)
+- 📅 Mobile-friendly version with notification system
+- 📅 Collaboration features for mentors, peers, and recruiters
 
 ## 🤝 Contributing
 
@@ -149,20 +169,6 @@ You can contribute by:
 - Optimizing AI modules
 
 Fork the repo, make changes, and submit a PR — even small contributions help!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## 📞 Contact
 
