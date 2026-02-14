@@ -128,7 +128,35 @@ futureforge-ai/
 
 ## 🎨 Visual Design
 
+## 🧪 Testing Strategy
 
+### Model & Logic Testing
+The project validates core system behavior through structured testing of AI outputs and workflow correctness:
+- **Resume Parsing Accuracy** – Ensures skills, experience, and keywords are correctly extracted
+- **Career Prediction Stability** – Checks that similar inputs produce consistent trajectory results
+- **Skill Gap Detection Validity** – Confirms recommended skills match the selected target role
+- **Planner Logic Testing** – Verifies study schedules adjust properly when tasks change or are skipped
+- **Burnout Signal Checks** – Tests workload thresholds and alert conditions
+
+### Testing Tools & Frameworks
+- **Python Testing** – Unit tests for AI modules and backend logic
+- **Frontend Testing** – Basic UI testing for dashboard, upload, and planner flows
+- **API Testing** – Endpoint validation to ensure smooth frontend-backend communication
+- **AWS Integration Tests** – Mocked storage, authentication, and serverless function responses
+
+## 🌍 Multilingual Support
+
+### Supported Languages
+- 🇬🇧 **English** - International accessibility
+- 🇮🇳 **हिंदी (Hindi)** - Uttar Pradesh, Bihar, Madhya Pradesh, Rajasthan & others
+- 🇮🇳 **తెలుగు (Telugu)** - Andhra Pradesh & Telangana
+- 🇮🇳 **বাংলা (Bengali)** - West Bengal
+- 🇮🇳 **ગુજરાતી (Gujarati)** - Gujarat culture
+- 🇮🇳 **ಕನ್ನಡ (Kannada)** - Karnataka traditions
+- 🇮🇳 **മലയാളം (Malayalam)** - Kerala heritage
+- 🇮🇳 **मराठी (Marathi)** - Maharashtra heritage
+- 🇮🇳 **ਪੰਜਾਬੀ (Punjabi)** - Punjab culture
+- 🇮🇳 **தமிழ் (Tamil)** - Tamil Nadu
 
 ## 🔐 Security & Privacy
 
