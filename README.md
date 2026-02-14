@@ -130,7 +130,19 @@ futureforge-ai/
 
 
 
+## 🔐 Security & Privacy
 
+### Data Protection
+- **Encrypted storage for resumes and user profiles using secure cloud storage layers**
+- **Secure data transfer via HTTPS APIs between frontend, backend, and AI services**
+- **AWS access control to restrict unauthorized data access and ensure safe processing**
+- **Minimal data retention policy to store only what is required for simulations**
+
+### User Privacy
+- **User-controlled uploads — resumes and inputs are processed only after consent**
+- **Profile-based analysis without collecting unnecessary personal information**
+- **Session-safe authentication using secure login and token validation**
+- **Transparent usage — users know what data is used for predictions and planning**
 
 ## 🏆 Hackathon Submission
 
