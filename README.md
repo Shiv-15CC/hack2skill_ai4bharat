@@ -26,44 +26,44 @@ FutureForge AI is a unified platform that simulates career trajectories, analyze
 
 ### 🎯 Career Trajectory Simulation
 
--**ML Prediction Engine**: Simulates multiple 5-year career paths based on skills, resume data, and goals
--**Outcome Comparison**: Shows best-case vs average growth with estimated salary ranges
--**Cloud Processing**: Runs simulations on scalable AWS compute infrastructure
--**Impact Testing**: Demonstrates how internships, projects, or certifications change outcomes
+- **ML Prediction Engine**: Simulates multiple 5-year career paths based on skills, resume data, and goals
+- **Outcome Comparison**: Shows best-case vs average growth with estimated salary ranges
+- **Cloud Processing**: Runs simulations on scalable AWS compute infrastructure
+- **Impact Testing**: Demonstrates how internships, projects, or certifications change outcomes
 
 ### 📊 Skill Gap Analysis
 
--**NLP Skill Extraction**: Detects current skills directly from resume and profile inputs
--**Market Matching**: Compares user profile with industry demand datasets
--**Cloud Skill Database**: Uses hosted datasets and APIs stored on AWS cloud storage
--**Priority Roadmap**: Ranks skills by real career impact instead of generic suggestions
+- **NLP Skill Extraction**: Detects current skills directly from resume and profile inputs
+- **Market Matching**: Compares user profile with industry demand datasets
+- **Cloud Skill Database**: Uses hosted datasets and APIs stored on AWS cloud storage
+- **Priority Roadmap**: Ranks skills by real career impact instead of generic suggestions
 
 ### 📄 AI Resume Intelligence
 
--**ATS Parsing**: Checks keywords, formatting, and recruiter compatibility using NLP
--**Role Alignment Score**: Measures how well the resume matches the target job role
--**Smart Suggestions**: Rewrites bullets, adds metrics, and recommends missing experience
--**Secure Processing**: Resume analysis handled via backend services deployed on AWS
+- **ATS Parsing**: Checks keywords, formatting, and recruiter compatibility using NLP
+- **Role Alignment Score**: Measures how well the resume matches the target job role
+- **Smart Suggestions**: Rewrites bullets, adds metrics, and recommends missing experience
+- **Secure Processing**: Resume analysis handled via backend services deployed on AWS
 
 ### 📅 Adaptive Study Planner
 
--**Task Generation**: Converts skill gaps into weekly and daily action plans
--**Dynamic Adjustment**: Rebalances schedule if tasks are skipped or workload rises
--**Progress Sync**: Stores updates in real time using cloud-based tracking architecture
--**Integration Ready**: Designed to connect with calendars, reminders, and notification APIs
+- **Task Generation**: Converts skill gaps into weekly and daily action plans
+- **Dynamic Adjustment**: Rebalances schedule if tasks are skipped or workload rises
+- **Progress Sync**: Stores updates in real time using cloud-based tracking architecture
+- **Integration Ready**: Designed to connect with calendars, reminders, and notification APIs
 
 ### 🔁 Closed-Loop Growth System
 
--**Continuous Re-Evaluation**: Updates predictions whenever user progress changes
--**Module Integration**: Resume, skills, and planner all feed into one growth engine
--**Centralized Profile**: Uses scalable cloud databases to store long-term user data
--**Long-Term Tracking**: Focuses on continuous improvement instead of one-time analysis
+- **Continuous Re-Evaluation**: Updates predictions whenever user progress changes
+- **Module Integration**: Resume, skills, and planner all feed into one growth engine
+- **Centralized Profile**: Uses scalable cloud databases to store long-term user data
+- **Long-Term Tracking**: Focuses on continuous improvement instead of one-time analysis
 
 ### ⚠️ Burnout Risk Detection
 
--**Workload Monitoring**: Tracks study hours, skipped tasks, and schedule intensity
--**Pattern Analysis**: Uses AI + heuristic models to detect unhealthy productivity trends
--**Smart Recommendations**: Suggests lighter schedules or recovery periods automatically
--**Cloud Analytics Layer**: Runs monitoring pipelines on scalable backend infrastructure
+- **Workload Monitoring**: Tracks study hours, skipped tasks, and schedule intensity
+- **Pattern Analysis**: Uses AI + heuristic models to detect unhealthy productivity trends
+- **Smart Recommendations**: Suggests lighter schedules or recovery periods automatically
+- **Cloud Analytics Layer**: Runs monitoring pipelines on scalable backend infrastructure
 
 
