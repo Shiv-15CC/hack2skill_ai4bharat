@@ -66,4 +66,23 @@ FutureForge AI is a unified platform that simulates career trajectories, analyze
 - **Smart Recommendations**: Suggests lighter schedules or recovery periods automatically
 - **Cloud Analytics Layer**: Runs monitoring pipelines on scalable backend infrastructure
 
+## 🏗 Architecture
 
+### AWS Services Used
+
+- **Amazon Bedrock** – Career simulation logic, resume NLP analysis, and roadmap generation using foundation models
+- **AWS Lambda** – Serverless backend for processing resumes, generating plans, and running prediction workflows
+- **Amazon S3** – Secure storage for resumes, user reports, and generated learning plans
+- **Amazon DynamoDB** – Stores user profiles, skill data, and progress tracking in real time
+- **Amazon API Gateway** – Handles frontend ↔ backend communication through REST APIs
+- **Amazon CloudWatch** – Monitoring usage, workload patterns, and burnout detection signals
+- **AWS Cognito** – User authentication and secure login system
+- **Amazon EventBridge** – Triggers automatic plan updates when user data changes
+
+### Architecture Highlights
+
+- **AI-Centric Pipeline**: Resume → Skill Analysis → Career Simulation → Planner runs as a connected workflow
+- **Serverless & Scalable**: Lambda-based processing allows handling many users without manual scaling
+- **Real-Time Adaptation**: Event-driven updates instantly adjust study plans and projections
+- **Secure Data Flow**: Authentication, storage, and API layers ensure safe handling of user career data
+- **Modular Design**: Each engine (Simulation, Resume, Planner) works independently but shares one profile database
