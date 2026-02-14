@@ -105,14 +105,14 @@ hack2skill_ai4bharat/
 
 ## 1.Clone the repository
 
-git clone https:/Shiv-15CC/github.com//hack2skill_ai4bharat.git
-cd hack2skill_ai4bharat
+- git clone https:/Shiv-15CC/github.com//hack2skill_ai4bharat.git
+- cd hack2skill_ai4bharat
 
 ## 2.Review the documentation
 
-- **Read (requirements.md) for detailed specifications**
-- **Check (design.md) for architecture details**
-- **Follow (tasks.md) for implementation plan**
+- **Read requirements.md(https://github.com/Shiv-15CC/hack2skill_ai4bharat/blob/main/.kiro/specs/requirements.md) for detailed specifications**
+- **Check design.md(https://github.com/Shiv-15CC/hack2skill_ai4bharat/blob/main/.kiro/specs/design.md) for architecture details**
+- **Follow tasks.md(https://github.com/Shiv-15CC/hack2skill_ai4bharat/blob/main/.kiro/specs/tasks.md) for implementation plan**
 
 ## 3.View wireframes and architecture
 
