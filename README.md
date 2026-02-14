@@ -90,39 +90,11 @@ FutureForge AI is a unified platform that simulates career trajectories, analyze
 ## 📋 Project Structure
 
 ```
-
-futureforge-ai/
-│
-├── frontend/                 # UI of the app (dashboard, planner, resume upload)
-│   ├── index.html
-│   ├── app.js
-│   └── style.css
-│
-├── backend/                  # Server code & APIs
-│   ├── server.py / server.js
-│   ├── routes/               # API endpoints
-│   └── utils/                # Helper functions
-│
-├── ai-modules/               # Core AI logic
-│   ├── resume_analysis.py
-│   ├── career_simulation.py
-│   ├── skill_gap.py
-│   └── planner.py
-│
-├── data/                     # Sample datasets / test inputs
-│   ├── skills.json
-│   └── sample_resume.pdf
-│
-├── docs/                     # Extra project info
-│   ├── architecture.md
-│   └── workflow.md
-│
-├── demo/                     # Demo files for hackathon
-│   ├── screenshots/
-│   └── demo_notes.md
-│
-├── requirements.txt / package.json   # Dependencies
-└── README.md                         # Main project file
+hack2skill_ai4bharat/
+├── 📁 .kiro/specs/
+│   ├── 📄 requirements.md          # 12 detailed requirements
+│   ├── 📄 design.md               # AWS architecture & 37 correctness properties
+│   └── 📄 tasks.md                # Implementation plan with PBT
 
 ```
 
